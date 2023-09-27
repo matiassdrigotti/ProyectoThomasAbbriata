@@ -1,0 +1,343 @@
+.mainIndex {
+    grid-area: main;
+    
+}
+
+
+/* BOTON YOUTUBE */
+
+.botonYoutube  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        
+        
+        > button {
+            border-radius: 5px;
+            background: linear-gradient(45deg, #00ccff, #0e1538, #0e1538, #d400d4);
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 18px;
+            padding: 10px;
+            width: 300px;
+        }
+        > img {
+                width: 70px;
+                height: 60px;
+            }
+            
+}
+
+        
+.videoYoutube {
+    > iframe {
+        height: 700px;
+        width: 100%;
+    }
+}
+
+/* BOTON SPOTIFY */
+
+.botonSpotify  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    
+    
+    > button {
+        border-radius: 5px;
+        background: linear-gradient(45deg, #00ccff, #0e1538, #0e1538, #d400d4);
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 18px;
+        padding: 10px;
+        width: 300px;
+    }
+    > img {
+        width: 70px;
+        height: 70px;
+    }    
+}
+
+/* REPRODUCTOR SPOTIFY */
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    
+    > h1 {
+        color: white;
+        margin-left: 20px;
+        font-size: 15px;
+        font-family: cursive;
+        
+        
+    }
+        > iframe {
+            border: 2px solid #3d15d9; 
+            box-shadow: -2px 0px 29px -1px rgba(61,21,217,0.89) inset;
+            -webkit-box-shadow: -2px 0px 29px -1px rgba(61,21,217,0.89) inset;
+            -moz-box-shadow: -2px 0px 29px -1px rgba(61,21,217,0.89) inset;
+            padding: 20px 100px 20px 100px;
+            width: 100%;
+            height: 500px;
+        }
+    }
+
+/* BOTON BEATPORT */
+
+.botonBeatport  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    
+
+    > button {
+        border-radius: 5px;
+        background: linear-gradient(45deg, #00ccff, #0e1538, #0e1538, #d400d4);
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 18px;
+        padding: 10px;
+        width: 300px;
+    }
+    > img {
+        margin: 30PX;
+        border: 4px solid #3d15d9;     
+        width: 350px;
+        height: 300px;
+        object-fit: cover;
+    }
+    
+}
+/* SoundCloud */
+.soundcloudFondo {
+    
+    
+    > img {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+    
+}
+.soundCloud{
+    padding: 20px;
+    > iframe {
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+        
+}
+section {
+    position: relative;
+    width: 100%;
+    height: 800px;
+  
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.preview {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+   
+    
+
+    > li {
+        list-style: none;
+        cursor: pointer;
+        margin: 10px;
+        border-radius: 4px;
+        background: #fff;
+        padding: 3px ;
+        opacity: 1;
+        transition: 0.5s;
+
+        > li:hover{
+            opacity: 1;
+            
+        }
+
+        > img {
+            width: 70px;
+            height: 100px;
+            transition: 0.5s;
+
+        }
+
+        > img:hover {
+            width: 100px;
+            height: 150px;
+        }
+    }
+
+}
+/* Seguime en mis redes */
+
+.Redes{
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0px;
+}
+
+/*ICONOS REDES*/
+
+.Seguidores{
+    background-color: none;
+     margin: 0;
+     padding: 0;
+     display: flex;
+    
+    
+    
+ }
+
+.Seguidores svg {
+    color: white;
+    background: none;
+    width: 50px;
+    height: 50px;
+    padding: 4px;
+ }
+
+ .Seguidores img {
+    background: none;
+    color: white;
+    width: 50px;
+    height: 50px;
+} 
+
+.Seguidores li {
+    list-style: none;
+    margin: 0 15px;
+ }
+
+ .Seguidores li a { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 63px;
+    background: #333;
+    border-radius: 50%;
+    font-size: 30px;
+    transition: .5s;
+} 
+
+.Seguidores li a:hover::before {
+    transform: scale(1.1);
+    box-shadow: 20px white;
+  }
+
+.Seguidores li a:hover {
+    box-shadow: 0 0 20px white;
+}
+
+/*SLIDER FOTOS*/
+
+.containetTotal {
+    background-color: #ffffff54;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 20px 0px;
+        
+    }
+}
+
+.container-carousel {
+    position: relative;
+    width: 1200px;
+    height: 600px;
+    background-color: #e0e0e0;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
+    border-radius: 15px;
+    overflow: hidden;
+  
+}
+
+.carruseles {
+    width: 1000%;
+    height: 100%;
+    display: flex;
+
+}
+
+.slider-section {
+    width: calc(100% / 10);
+    height: 100%;
+    > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+        
+    }
+}
+
+
+.btn-left,
+.btn-right {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #ffffff81;
+    transform: translate(0,-50%);
+    transition: .5s ease;
+    user-select: none;
+}
+
+.btn-left:hover,
+.btn-right:hover {
+    background-color: #333333d4;
+    color: #fff;
+}
+
+.btn-left {
+    left: 10px;
+}
+
+.btn-right {
+    right: 10px;
+}

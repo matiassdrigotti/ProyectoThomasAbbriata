@@ -1,0 +1,13 @@
+.body1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto auto 300px 100px 50px;
+    grid-template-areas: " nav    nav    nav    nav"
+                         "header header header header"
+                         "aside  aside  aside  aside"
+                         " main   main  main    main"
+                         " main   main  main   main"
+                         "footer footer footer footer"
+
+                    
+}

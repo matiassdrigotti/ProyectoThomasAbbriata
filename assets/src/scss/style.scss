@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+@import "navIndex";
+@import "gridIndex";
+@import "headerIndex";
+@import "asideIndex";
+@import "main";
