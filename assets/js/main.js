@@ -22,16 +22,12 @@ function logoLinkYoutube() {
     window.open ('https://www.youtube.com/@thomasabbriata6453')
 }
 
-function logoLinkTwitter() {
-    window.open ('')
-}
-
 function logoLinkSoundclound() {
     window.open ('https://soundcloud.com/thomas-abbriata-737795989')
 }
 
 function logoLinkGmail() {
-    window.open ('')
+    window.open ('https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvlqhhHLWNWTJRvqQfshfTLcXbhRQcLrTgktfFxPLNSsHdWwfxKJzPTqcMbPhktCqgHlVB')
 }
 
 function logoLinkTree() {

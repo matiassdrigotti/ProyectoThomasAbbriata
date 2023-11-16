@@ -8,43 +8,35 @@
     align-items: center;
     font-family: cursive;
     margin: 0;
-    @media (max-width: 670px) {
-        flex-direction: row-reverse;
+    @media (max-width: 750px) {
+        justify-content: space-between;
+        
     }     
     > .logo  img {
         height: 70px;
         width: 70px;
         display: block;
         align-items: center;
-        
-        
-                
-        @media (max-width: 670px) {
-            width: 60px;
-            height: 60px;
-        }
-        
+        @media (max-width: 800px) {
+            
+            
+            
+        }  
         
     }
     
     > .paginas {
+        
         > ul {
             list-style-type: none;
             display: flex;
             align-items: center;
-            @media (max-width: 670px) {
-                position: fixed;
-                top: 60px;
-                left: -300px;
-                flex-direction: column;
-                justify-content: start;
-                align-items: center;
-                padding-top: 50px;
-                background-color:  rgb(201, 201, 201);
-                width: 250px;
-                height: 100vh;
-                transition: 0.5s;
-            }
+            @media (max-width: 750px) {
+            display: none;
+            
+                    
+                    
+        }
             > li {
                 > a{
                     display: block;
@@ -52,20 +44,28 @@
                     text-decoration: none;
                     color: white;
                     font-size: 15px;
-                    
-                    
+                        
+                        
                 }
             }
         }       
     }
 }
 
-.iconNav svg {
-   color: white;
-   width: 25px;
-   height: 25px;
-   padding: 4px;
-    
+.iconNav > ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    @media (max-width: 800px) {
+        
+    }
+    > svg {
+        color: white;
+        width: 25px;
+        height: 25px;
+        padding: 4px;
+        
+    }
 }
 
 .iconNav img {
