@@ -94,7 +94,11 @@
     display: flex;
     flex-direction: column;
     margin-top: 40px;
-    
+    @media (max-width: 600px) {
+        margin-top: 0px;
+        
+
+    }
     > h1 {
         color: white;
         margin-left: 20px;
@@ -111,6 +115,17 @@
             padding: 20px 100px 20px 100px;
             width: 100%;
             height: 500px;
+            @media (max-width: 800px) {
+                padding: 10px ;
+                
+        
+            }
+            @media (max-width: 600px) {
+                height: 380px;
+                
+        
+            }
+            
         }
     }
 
@@ -165,6 +180,12 @@
         position: absolute;
         height: 100%;
         width: 100%;
+        @media (max-width: 500px) {
+            height: 580px;
+            
+    
+        }
+        
     }
     
 }
@@ -174,6 +195,11 @@
         position: relative;
         height: 100%;
         width: 100%;
+        @media (max-width: 500px) {
+            height: 90px;
+            
+    
+        }
     }
     > h1 {
         position: relative;
@@ -190,6 +216,16 @@ section {
     position: relative;
     width: 100%;
     height: 800px;
+    @media (max-width: 700px) {
+        height: 600px;
+        
+
+    }
+    @media (max-width: 450px) {
+        height: 500px;
+        
+
+    }
     > h1 {
         color: white;
         margin-left: 20px;
@@ -211,7 +247,7 @@ video {
 
 .preview {
     position: absolute;
-    bottom: 40px;
+    bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 100;
@@ -238,15 +274,27 @@ video {
         }
 
         > img {
-            width: 70px;
-            height: 100px;
+            width: 50px;
+            height: 80px;
             transition: 0.5s;
+            @media (max-width: 450px) {
+                width: 30px;
+                height: 50px;
+                
+        
+            }
 
         }
 
         > img:hover {
-            width: 100px;
-            height: 150px;
+            width: 80px;
+            height: 120px;
+            @media (max-width: 450px) {
+                width: 50px;
+                height: 70px;
+                
+        
+            }
         }
     }
 

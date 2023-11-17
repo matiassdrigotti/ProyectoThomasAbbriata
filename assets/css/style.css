@@ -228,6 +228,11 @@
   flex-direction: column;
   margin-top: 40px;
 }
+@media (max-width: 600px) {
+  .contenedor {
+    margin-top: 0px;
+  }
+}
 .contenedor > h1 {
   color: white;
   margin-left: 20px;
@@ -242,6 +247,16 @@
   padding: 20px 100px 20px 100px;
   width: 100%;
   height: 500px;
+}
+@media (max-width: 800px) {
+  .contenedor > iframe {
+    padding: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .contenedor > iframe {
+    height: 380px;
+  }
 }
 
 /* BOTON BEATPORT */
@@ -286,6 +301,11 @@
   height: 100%;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .soundcloudFondo > img {
+    height: 580px;
+  }
+}
 
 .soundCloud {
   padding: 20px;
@@ -294,6 +314,11 @@
   position: relative;
   height: 100%;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .soundCloud > iframe {
+    height: 90px;
+  }
 }
 .soundCloud > h1 {
   position: relative;
@@ -308,6 +333,16 @@ section {
   position: relative;
   width: 100%;
   height: 800px;
+}
+@media (max-width: 700px) {
+  section {
+    height: 600px;
+  }
+}
+@media (max-width: 450px) {
+  section {
+    height: 500px;
+  }
 }
 section > h1 {
   color: white;
@@ -328,7 +363,7 @@ video {
 
 .preview {
   position: absolute;
-  bottom: 40px;
+  bottom: 0px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 100;
@@ -351,13 +386,25 @@ video {
   opacity: 1;
 }
 .preview > li > img {
-  width: 70px;
-  height: 100px;
+  width: 50px;
+  height: 80px;
   transition: 0.5s;
 }
+@media (max-width: 450px) {
+  .preview > li > img {
+    width: 30px;
+    height: 50px;
+  }
+}
 .preview > li > img:hover {
-  width: 100px;
-  height: 150px;
+  width: 80px;
+  height: 120px;
+}
+@media (max-width: 450px) {
+  .preview > li > img:hover {
+    width: 50px;
+    height: 70px;
+  }
 }
 
 /* Seguime en mis redes */
