@@ -30,10 +30,6 @@ function logoLinkGmail() {
     window.open ('https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvlqhhHLWNWTJRvqQfshfTLcXbhRQcLrTgktfFxPLNSsHdWwfxKJzPTqcMbPhktCqgHlVB')
 }
 
-function logoLinkTree() {
-    window.open ('https://linktr.ee/thomiabbriata')
-}
-
 function logoBeatport() {
     window.open ('https://www.beatport.com/artist/thomas-abbriata/1088567')
 }

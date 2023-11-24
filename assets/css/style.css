@@ -170,29 +170,148 @@
   height: 60px;
 }
 
-.videoYoutube > iframe {
-  height: 700px;
+/*  
+.videoYoutube {
+    > iframe {
+        height: 700px;
+        width: 100%;
+        @media (max-width: 1100px) {
+            height: 500px;
+
+        }
+        @media (max-width: 800px) {
+            height: 400px;
+
+        }
+        @media (max-width: 600px) {
+            height: 300px;
+
+        }
+        @media (max-width: 430px) {
+            height: 270px;
+
+        }
+
+    }
+}*/
+.kiko-slider {
+  background-color: #FFFFFF;
+  height: 600px;
   width: 100%;
+  margin: 20px 0px 50px 0px;
 }
 @media (max-width: 1100px) {
-  .videoYoutube > iframe {
+  .kiko-slider {
     height: 500px;
   }
 }
 @media (max-width: 800px) {
-  .videoYoutube > iframe {
+  .kiko-slider {
     height: 400px;
   }
 }
 @media (max-width: 600px) {
-  .videoYoutube > iframe {
+  .kiko-slider {
     height: 300px;
   }
 }
 @media (max-width: 430px) {
-  .videoYoutube > iframe {
+  .kiko-slider {
     height: 270px;
   }
+}
+.kiko-slider > ul, .kiko-slider li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+@media (max-width: 1100px) {
+  .slider {
+    height: 500px;
+  }
+}
+@media (max-width: 800px) {
+  .slider {
+    height: 400px;
+  }
+}
+@media (max-width: 600px) {
+  .slider {
+    height: 300px;
+  }
+}
+@media (max-width: 430px) {
+  .slider {
+    height: 270px;
+  }
+}
+.slider > li {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+  width: inherit;
+  height: inherit;
+  transition: opacity 0.5s;
+}
+.slider > li > iframe {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+@media (max-width: 1100px) {
+  .slider > li > iframe {
+    height: 500px;
+  }
+}
+@media (max-width: 800px) {
+  .slider > li > iframe {
+    height: 400px;
+  }
+}
+@media (max-width: 600px) {
+  .slider > li > iframe {
+    height: 300px;
+  }
+}
+@media (max-width: 430px) {
+  .slider > li > iframe {
+    height: 270px;
+  }
+}
+
+.kiko-slider > ul.slider li:first-child {
+  opacity: 1;
+  /*Mostramos el primer <li>*/
+}
+
+.kiko-slider > ul.slider li:target {
+  opacity: 1;
+  /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+}
+.menu > li {
+  display: inline-block;
+  text-align: center;
+}
+.menu > li > a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 40px;
 }
 
 /* BOTON SPOTIFY */
@@ -332,7 +451,7 @@
 section {
   position: relative;
   width: 100%;
-  height: 800px;
+  height: 1000px;
 }
 @media (max-width: 700px) {
   section {
@@ -356,8 +475,8 @@ video {
   position: absolute;
   top: 50px;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -671,12 +790,12 @@ video {
   }
 }
 .contactos > img {
-  height: 300px;
+  height: 500px;
   width: 400px;
 }
 @media (max-width: 500px) {
   .contactos > img {
-    height: 250px;
+    height: 400px;
     width: 100%;
   }
 }
