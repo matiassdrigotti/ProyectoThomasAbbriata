@@ -13,12 +13,14 @@
         
     }     
     > .logo  img {
+        padding: 0px 0px 0px 10px;
         height: 70px;
         width: 70px;
         display: block;
         align-items: center;
-        @media (max-width: 800px) {
-            
+        @media (max-width: 450px) {
+            width: 90px;
+            height: 90px;
             
             
         }  
@@ -53,10 +55,15 @@
     }
 }
 
-.iconNav > ul {
+.iconNav {
+    margin-right: 10px;
+
+    > ul {
     list-style-type: none;
     display: flex;
     align-items: center;
+    margin: 0px;
+    padding: 0px;
     @media (max-width: 800px) {
         
     }
@@ -65,15 +72,25 @@
         width: 25px;
         height: 25px;
         padding: 4px;
-        
+        @media (max-width: 450px) {
+        height: 32px;
+        width: 32px;
+        padding: 0px 6px;
     }
-}
+    }
+    }
+}    
 
 .iconNav img {
     color: white;
     width: 25px;
     height: 25px;
     padding: 4px;
+    @media (max-width: 450px) {
+        height: 32px;
+        width: 32px;
+        padding: 5px 5px;
+    }
      
  }
  

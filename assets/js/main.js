@@ -7,7 +7,7 @@ function btnSpotify() {
 }
 
 function logoLinkInstagram() {
-    window.open('https://www.instagram.com/thabbriata.music/')
+    window.open('https://www.instagram.com/thomasabbriata/')
 }
 
 function logoLinkFacebook() { 
